@@ -12,7 +12,7 @@ app.use(logger("dev"));
 // app.use(cors());
 app.use(
   cors({
-    origin: ["https://google-library-frontend.herokuapp.com/"],
+    origin: ["https://google-library-frontend.herokuapp.com"],
   })
 );
 
