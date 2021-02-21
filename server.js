@@ -1,12 +1,17 @@
 const express = require("express");
 const logger = require("morgan");
-const mongoose = require("mongoose");
 const cors = require("cors");
+const mongoose = require("mongoose");
+const http = require("http");
+const socketIo = require("socket.io");
 
 // Sets up the Express App
 // =============================================================
 const app = express();
 const PORT = process.env.PORT || 8080;
+
+const server = http.createServer(app);
+const io = socketIo(server);
 
 app.use(logger("dev"));
 // app.use(cors());

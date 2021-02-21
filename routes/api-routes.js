@@ -33,4 +33,8 @@ module.exports = function (app) {
         res.json(err);
       });
   });
+
+  app.get("/", (req, res) => {
+    res.redirect("https://google-library-frontend.herokuapp.com");
+  });
 };
