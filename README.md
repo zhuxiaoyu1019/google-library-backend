@@ -26,7 +26,8 @@ This is a Google Library Backend API built with Mongoose, Node, and Express. It 
 
 ## Installation
 
-To install necessary dependencies, run the following command:
+ - This backend server is used in [google-library-frontend](https://github.com/zhuxiaoyu1019/google-library-frontend.git)
+ - To install necessary dependencies, run the following command:
 
       npm i
 
